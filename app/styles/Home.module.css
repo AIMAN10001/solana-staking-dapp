@@ -1,0 +1,564 @@
+.container {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  /* grid-template-columns: 14rem auto; */
+}
+.top {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.2rem;
+  margin-top: -0.1rem;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.7rem;
+  /* margin-top: 0.3rem; */
+  gap: 0.2rem;
+}
+.logo img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.close {
+  display: none;
+}
+
+/* sidebar */
+.sidebar {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  position: relative;
+  top: 1.3rem;
+}
+
+.sidebar h2 {
+  font-weight: 400;
+}
+
+.icon {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
+.sidebar a {
+  display: flex;
+  color: #ffffff9e;
+
+  margin: 0.1rem 1.5rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  height: 3.5rem;
+  transition: all 300ms ease;
+  border-radius: 2rem;
+}
+
+.sidebar a.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  /* margin-left: 1.4rem; */
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  /* margin-left: 1.4rem; */
+}
+
+/* //SOCIAL */
+.footer_social {
+  display: flex;
+  /* gap: 0.1rem; */
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1.4rem;
+  border-top: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.footer_social a {
+  padding: 0.8rem;
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
+  display: grid;
+  color: #fff;
+  margin: 0.5rem;
+  margin-top: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* -------------end of aside--------- */
+
+/* Main section */
+
+.topitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 30rem;
+  background-color: transparent;
+  margin-bottom: -0.5rem;
+  margin-left: -2rem;
+  margin-right: -1.7rem;
+}
+
+.topitem h1 {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.buyButton,
+.walletButton {
+  padding: 0.1rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  height: 2.7rem;
+  align-items: center;
+}
+
+.buyButton {
+  background-color: #8d7aa4;
+  color: black;
+}
+
+.walletButton {
+  background-color: #fff;
+  color: black;
+}
+
+/* .buyButton:hover,
+.walletButton:hover {
+  background-color: #5a66d8;
+} */
+
+.buyButton span,
+.walletButton span {
+  margin-left: 0.5rem;
+}
+
+.icons {
+  font-size: 1.3rem;
+}
+
+.icon4 {
+  font-size: 1.4rem;
+  margin-right: 0.1rem;
+  color: #705e86;
+}
+.icon5 {
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+}
+/* -----------End Of Main----------- */
+
+/* ----------------Big Section----------- */
+
+.bigSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+/*------------------ section1----------- */
+
+.section1 {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* padding: 0.3rem; */
+  margin-left: 23rem;
+  margin-right: 42rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: left;
+  margin-top: 0.6rem;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+/* .section1 {
+  display: flex;
+  align-items: center;
+} */
+
+.stakingIcon {
+  margin-right: 1rem;
+  justify-content: center;
+  display: flex;
+  margin: 1rem;
+  padding: 0.8rem;
+  margin-top: 1.1rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.icon2 {
+  font-size: 1.5rem;
+}
+
+.icon3 {
+  font-size: 1.7rem;
+}
+
+.stakedAmount {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  color: #ffffff9e;
+  margin-top: 0.6rem;
+}
+
+.amountBox {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  /* margin-top: 0.5rem; */
+  height: 2.5rem;
+}
+
+.amountBox span {
+  font-size: 1.2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.content {
+  margin-top: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.row p {
+  margin-right: 1rem;
+}
+
+/* ------------------section2---------- */
+
+.section22 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.section2 {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* padding: 0.3rem; */
+  margin-left: 23rem;
+  /* margin-right: 32rem; */
+  border-radius: 1rem;
+  height: 32rem;
+  width: 44rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.header {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.stakedAmount2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.content2 {
+  /* margin-top: 14rem; */
+  /* width: 100%; */
+}
+
+.amountBoxContainer {
+  display: flex;
+  justify-content: center;
+  margin: 1.2rem;
+}
+
+.amountBox1 {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin: 0 0.5rem;
+  height: 6rem;
+  gap: 0.4rem;
+}
+
+.amountBox1 p {
+  /* margin-bottom: 0.5rem; */
+  font-size: 1.1rem;
+}
+
+.amountBox1 span {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 4.5rem;
+  height: 1.7rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 0.5rem;
+  /* margin-top: 0.1rem; */
+}
+
+.buttonContainer {
+  margin-top: 7rem;
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.stakeButton,
+.unstakeButton {
+  /* flex: 1; */
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* background: transparent; */
+  font-size: 1.2rem;
+}
+
+.stakeButton {
+  background-color: transparent;
+  color: #ffffff9e;
+}
+
+.unstakeButton {
+  background-color: transparent;
+  color: #ffffff9e;
+}
+
+.stakeButton:active,
+.unstakeButton:active {
+  color: #fff;
+  text-decoration: underline;
+  /* text-decoration-thickness: 1rem; */
+}
+
+.placeholderContainer {
+  margin: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.placeholder {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+
+  border-radius: 3rem;
+  margin-right: -4.4rem;
+  margin-top: 1rem;
+}
+
+.maxButton {
+  padding: 0.6rem;
+  width: 4rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  color: #624e6edc;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.stakeUnstakeButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #6f5a7ac5;
+  color: #3b2b45dc;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 41rem;
+  margin-left: 1.6rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+}
+
+/* ----------------section3--------------- */
+
+.section3 {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* padding: 0.3rem; */
+  /* margin-left: 23rem; */
+  margin-right: 4rem;
+  height: 32rem;
+  width: 27rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+/* Balance Section */
+.balanceSection {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.balanceSection .headerA {
+  margin-bottom: 1rem;
+}
+
+.balanceSection .contentA {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  border-bottom: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.balanceSection .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.balanceSection .row:last-child {
+  border-bottom: none;
+}
+
+.balanceSection .row p {
+  font-weight: bold;
+  color: #ffffff9e;
+
+  font-size: 1.1rem;
+}
+
+.balanceSection .row span {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 6.5rem;
+  height: 1.7rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 0.5rem;
+}
+
+.amountBox {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  width: 6rem;
+}
+
+.balanceSectionB {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-top: -1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.balanceSectionB .headerA {
+  margin-bottom: 1rem;
+}
+
+.balanceSectionB .contentA {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  border-bottom: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.balanceSectionB .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.balanceSection .row:last-child {
+  border-bottom: none;
+}
+
+.balanceSectionB .row p {
+  font-weight: bold;
+  color: #ffffff9e;
+
+  font-size: 1.1rem;
+}
+
+.balanceSectionB .row span {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 6.5rem;
+  height: 1.7rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 0.5rem;
+}
+
+.balanceSectionC {
+  padding: 2rem;
+  gap: 3rem;
+  border-radius: 0.5rem;
+  margin-top: -1rem;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.balanceSectionC .headerA {
+  margin-top: 0.5rem;
+  margin-right: 4rem;
+}
+
+.balanceSectionC .contentA {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  /* border-bottom: 1px solid rgba(245, 245, 245, 0.386); */
+}
+
+.balanceSectionC .row span {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 6.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 0.5rem;
+  margin-left: 0.7rem;
+}

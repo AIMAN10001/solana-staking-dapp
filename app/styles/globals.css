@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Azonix";
+  src: url("../public/Azonix.otf") format("opentype");
+}
+
+h1,
+/* h2, */
+h4,
+h5 {
+  font-family: "Azonix", sans-serif;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("../public/static/Sora-Medium.ttf") format("truetype");
+}
+
+body,
+h2,
+h3,
+h6,
+p,
+span,
+div / {
+  font-family: "Sora", sans-serif;
+}
+
+/* Root Variables */
+:root .root {
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1ab;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: poppins, sans-serif;
+  font-size: 0.88rem;
+  color: #fff;
+  background: url(img/bg.png);
+  user-select: none;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--color-dark);
+}
+
+img {
+  display: block;
+  /* height: 100%; */
+  width: 100%;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 0.87rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1.1rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.profile-photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.text-muted {
+  color: var(--color-info-dark);
+}
+
+p {
+  color: var(--color-dark-variant);
+}
+
+b {
+  color: var(--color-dark);
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.danger {
+  color: var(--color-danger);
+}
+
+.success {
+  color: var(--color-success);
+}
+
+.warning {
+  color: var(--color-warning);
+}
+aside {
+  height: 100%;
+  /* height: 100vh; */
+  width: 45vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(245, 245, 245, 0.404);
+  position: fixed;
+}
+
+main {
+  /* padding: 1.5rem; */
+  /* margin-left: 25rem; */
+  border-bottom: 1px solid rgba(245, 245, 245, 0.404);
+  margin-left: 23rem;
+  margin-right: 3.5rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+}
