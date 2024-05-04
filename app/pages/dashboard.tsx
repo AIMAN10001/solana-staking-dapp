@@ -23,6 +23,7 @@ import { SiMarketo } from "react-icons/si";
 import { FaCloudsmith } from "react-icons/fa";
 import { FaPiggyBank } from "react-icons/fa";
 import { SiCrowdsource } from "react-icons/si";
+import { FaMedium } from "react-icons/fa6";
 
 import styles from "../styles/Home.module.css";
 
@@ -62,10 +63,10 @@ export default function Home() {
       <aside>
         <div className={styles.top}>
           <div className={styles.logo}>
-            <img src="img/logio.png" alt="logo"></img>
+            <img src="img/2.png" alt="logo"></img>
           </div>
           <div className={styles.logotext}>
-            <img src="img/logo.png" alt="logo"></img>
+            <img src="img/3.png" alt="logo"></img>
           </div>
           {/* <div className={styles.close} id="close-btn">
             <AiOutlineClose className={styles.closeIcon} />
@@ -92,16 +93,13 @@ export default function Home() {
           </a>
         </div>
         <div className={styles.footer_social}>
-          <a href="#">
+          <a href="https://bit.ly/4dfkHSD?r=Ip">
             <FaXTwitter />
           </a>
-          <a href="#">
-            <FaRedditAlien />
+          <a href="https://bit.ly/4b9xBQ0?r=Ip">
+            <FaMedium />
           </a>
-          <a href="#">
-            <FaDiscord />
-          </a>
-          <a href="#">
+          <a href="https://t.me/SyncusSolCommunity">
             <FaTelegramPlane />
           </a>
         </div>
@@ -121,7 +119,7 @@ export default function Home() {
               //     )
               //   }
             >
-              <MdToken className={styles.icon5} /> BUY $SYNC
+              <MdToken className={styles.icon5} /> BUY $SYNCS
             </button>
             <button
               className={styles.walletButton}

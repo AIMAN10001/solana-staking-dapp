@@ -24,6 +24,7 @@ import { FaPiggyBank } from "react-icons/fa";
 import { FaVolleyballBall } from "react-icons/fa";
 import { FaExclamationTriangle } from "react-icons/fa";
 import { IoDiamondSharp } from "react-icons/io5";
+import { FaMedium } from "react-icons/fa6";
 
 import styles from "../styles/Home.module.css";
 
@@ -63,10 +64,10 @@ export default function Home() {
       <aside>
         <div className={styles.top}>
           <div className={styles.logo}>
-            <img src="img/logio.png" alt="logo"></img>
+            <img src="img/2.png" alt="logo"></img>
           </div>
           <div className={styles.logotext}>
-            <img src="img/logo.png" alt="logo"></img>
+            <img src="img/3.png" alt="logo"></img>
           </div>
           {/* <div className={styles.close} id="close-btn">
             <AiOutlineClose className={styles.closeIcon} />
@@ -93,16 +94,13 @@ export default function Home() {
           </a>
         </div>
         <div className={styles.footer_social}>
-          <a href="#">
+          <a href="https://bit.ly/4dfkHSD?r=Ip">
             <FaXTwitter />
           </a>
-          <a href="#">
-            <FaRedditAlien />
+          <a href="https://bit.ly/4b9xBQ0?r=Ip">
+            <FaMedium />
           </a>
-          <a href="#">
-            <FaDiscord />
-          </a>
-          <a href="#">
+          <a href="https://t.me/SyncusSolCommunity">
             <FaTelegramPlane />
           </a>
         </div>
@@ -194,11 +192,11 @@ export default function Home() {
           {/* Second Section */}
           <section className={styles.sectioncc2}>
             <div className={styles.headercc}>
-              <h5>Referrel Settings</h5>
+              <h5>Referral Settings</h5>
             </div>
             <div className={styles.content2}>
               <div className={styles.contentcc2}>
-                <span>Your Referrel Code</span>
+                <span>Your Referral Code</span>
               </div>
               <div className={styles.placeholderContainerc}>
                 <input
