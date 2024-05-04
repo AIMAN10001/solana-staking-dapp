@@ -17,7 +17,13 @@ import { FaDiscord } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdToken } from "react-icons/md";
 import { MdAccountBalanceWallet } from "react-icons/md";
-import { SiHiveBlockchain } from "react-icons/si";
+import { MdOutlineDoneAll } from "react-icons/md";
+import { IoCopyOutline } from "react-icons/io5";
+import { BiSolidPurchaseTagAlt } from "react-icons/bi";
+import { FaPiggyBank } from "react-icons/fa";
+import { FaVolleyballBall } from "react-icons/fa";
+import { FaExclamationTriangle } from "react-icons/fa";
+import { IoDiamondSharp } from "react-icons/io5";
 
 import styles from "../styles/Home.module.css";
 
@@ -72,12 +78,12 @@ export default function Home() {
             <TbLayoutDashboard className={styles.icon} />
             <h2>Dashboard</h2>
           </a>
-          <a href="/" className={styles.active}>
+          <a href="/">
             <FaStackExchange className={styles.icon} />
             <h2>Stake</h2>
           </a>
 
-          <a href="/affiliate">
+          <a href="/affiliate" className={styles.active}>
             <AiFillNotification className={styles.icon} />
             <h2>Affiliate</h2>
           </a>
@@ -105,7 +111,7 @@ export default function Home() {
 
       <main>
         <section className={styles.topitem}>
-          <h1>Stake</h1>
+          <h1>Affiliate</h1>
           <div className={styles.buttons}>
             <button
               className={styles.buyButton}
@@ -130,119 +136,133 @@ export default function Home() {
       </main>
       {/* -----------end of heading------------ */}
 
-      <section className={styles.bigSection}>
+      <section className={styles.bigSectionc}>
         {/* First Section */}
-
-        <div className={styles.section1}>
-          <div className={styles.stakingIcon}>
-            <SiHiveBlockchain className={styles.icon2} />
+        <div className={styles.chead}>
+          <div className={styles.ctext}>
+            <h4>Statistics</h4>
           </div>
-          <div className={styles.stakedAmount}>
-            <h6>Total Staked</h6>
-            <div className={styles.amountBox}>
-              <span>$1000</span>
+          <div className={styles.ctext}>
+            <FaExclamationTriangle className={styles.iconc} />
+            <span>How it works?</span>
+          </div>
+        </div>
+        <div className={styles.sectionc}>
+          <div className={styles.sectionc2}>
+            <div className={styles.stakingIcon}>
+              <FaVolleyballBall className={styles.icon2} />
+            </div>
+            <div className={styles.stakedAmountc}>
+              <h6>All Reference</h6>
+              <div className={styles.amountBoxc}>
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.sectionc3}>
+            <div className={styles.stakingIcon}>
+              <BiSolidPurchaseTagAlt className={styles.icon2} />
+            </div>
+            <div className={styles.stakedAmountc}>
+              <h6>Total Purchased</h6>
+              <div className={styles.amountBoxc}>
+                <span>$0</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className={styles.section22}>
-          {/* Second Section */}
-          <section className={styles.section2}>
-            <div className={styles.header}>
-              <div className={styles.stakingIcon}>
-                <SiHiveBlockchain className={styles.icon3} />
+        <div className={styles.sectioncb}>
+          <div className={styles.sectioncb3}>
+            <div className={styles.stakingIcon}>
+              <FaPiggyBank className={styles.icon2} />
+            </div>
+            <div className={styles.stakedAmountc}>
+              <h6>Available Earnings</h6>
+              <div className={styles.amountBoxc}>
+                <span>$0</span>
               </div>
-              <div className={styles.stakedAmount2}>
-                <h4>$SYNCS</h4>
+            </div>
+            <div className={styles.amountBoxc1}>
+              <span>Claim Earnings</span>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.sectionc22}>
+          {/* Second Section */}
+          <section className={styles.sectioncc2}>
+            <div className={styles.headercc}>
+              <h5>Referrel Settings</h5>
+            </div>
+            <div className={styles.content2}>
+              <div className={styles.contentcc2}>
+                <span>Your Referrel Code</span>
+              </div>
+              <div className={styles.placeholderContainerc}>
+                <input
+                  type="text"
+                  className={styles.placeholderc}
+                  placeholder="Enter a code"
+                />
+                <MdOutlineDoneAll className={styles.iconc2} />
               </div>
             </div>
             <div className={styles.content2}>
-              {/* APY Rate and Current Index Rate */}
-              <div className={styles.amountBoxContainer}>
-                <div className={styles.amountBox1}>
-                  <p>APY</p>
-                  <span>100%</span>
-                </div>
-                <div className={styles.amountBox1}>
-                  <p>Current Index Rate</p>
-                  <span>1.4873</span>
-                </div>
+              <div className={styles.contentcc2}>
+                <span>Affiliate Link</span>
               </div>
-
-              {/* Stake and Unstake buttons */}
-              <div className={styles.buttonContainer}>
-                <button
-                  className={styles.stakeButton}
-                  onClick={handleStakeButtonClick}
-                >
-                  Stake
-                </button>
-                <button
-                  className={styles.unstakeButton}
-                  onClick={handleUnstakeButtonClick}
-                >
-                  Unstake
-                </button>
-              </div>
-
-              <div className={styles.placeholderContainer}>
+              <div className={styles.placeholderContainerc}>
                 <input
                   type="text"
-                  className={styles.placeholder}
-                  placeholder="Enter amount"
+                  className={styles.placeholderc2}
+                  placeholder="https://syncussol/stake"
                 />
-                <button className={styles.maxButton}>Max</button>
+                <IoCopyOutline className={styles.iconc2} />
               </div>
-              <button className={styles.stakeUnstakeButton}>
-                {previousAction === "stake" ? "Unstake" : "Stake SYNC"}
-              </button>
             </div>
           </section>
 
           {/* Third Section */}
-          <div className={styles.section3}>
-            {/* First Section */}
-            <div className={styles.balanceSection}>
-              <div className={styles.headerA}>
-                <h5>Balance</h5>
+          <div className={styles.sectioncc3}>
+            <div className={styles.sectioncc21}>
+              <div className={styles.stakingIcon}>
+                <IoDiamondSharp className={styles.iconcc2} />
               </div>
-              <div className={styles.contentA}>
-                <div className={styles.row}>
-                  <p>Your Balance:</p>
-                  {/* Display your balance */}
-                  <span>0.00</span>
-                </div>
-                <div className={styles.row}>
-                  <p>Your Staked Balance:</p>
-                  <span>0.00</span>
+              <div className={styles.stakedAmountcc2}>
+                <h6>Tier 1</h6>
+                <div className={styles.amountBoxcc2}>
+                  <span>9% Commision</span>
                 </div>
               </div>
             </div>
-
             {/* Second Section */}
-            <div className={styles.balanceSectionB}>
-              <div className={styles.headerA}>
-                <h5>Balance</h5>
-              </div>
-              <div className={styles.contentA}>
-                <div className={styles.row}>
-                  <p>Next Reward Amount:</p>
-                  <span>$200</span>
+            <div className={styles.balanceSectionBC2}>
+              <div className={styles.contentccA}>
+                <div className={styles.rowcc}>
+                  <p>Active refferels to claim</p>
+                  <span>0/1</span>
                 </div>
-                <div className={styles.row}>
-                  <p>Next Reward Yield:</p>
-                  <span>5%</span>
+                <div className={styles.rowcc2}>
+                  <p>Total Purchased</p>
+                  <span>0%</span>
                 </div>
               </div>
             </div>
-
-            {/* Third Section */}
-            <div className={styles.balanceSectionC}>
-              <div className={styles.headerA}>
-                <h6>ROI (7-Day Rate)</h6>
-              </div>
-              <div className={styles.row}>
-                <span>1.7534</span>
+            <div className={styles.balanceSectionBC}>
+              <div className={styles.contentccAC}>
+                <div className={styles.rowcc22}>
+                  <div className={styles.A}>
+                    <IoDiamondSharp className={styles.Aicon} />
+                    <p>Tier 1</p>
+                  </div>
+                  <div>
+                    <span>$0/$1000</span>
+                  </div>
+                </div>
+                <div className={styles.rowccc2}></div>
+                <button className={styles.tiersButton}>View Tiers</button>
               </div>
             </div>
           </div>

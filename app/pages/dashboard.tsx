@@ -18,6 +18,11 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { MdToken } from "react-icons/md";
 import { MdAccountBalanceWallet } from "react-icons/md";
 import { SiHiveBlockchain } from "react-icons/si";
+import { FaCircleDollarToSlot } from "react-icons/fa6";
+import { SiMarketo } from "react-icons/si";
+import { FaCloudsmith } from "react-icons/fa";
+import { FaPiggyBank } from "react-icons/fa";
+import { SiCrowdsource } from "react-icons/si";
 
 import styles from "../styles/Home.module.css";
 
@@ -68,11 +73,11 @@ export default function Home() {
         </div>
 
         <div className={styles.sidebar}>
-          <a href="/dashboard">
+          <a href="/dashboard" className={styles.active}>
             <TbLayoutDashboard className={styles.icon} />
             <h2>Dashboard</h2>
           </a>
-          <a href="/" className={styles.active}>
+          <a href="/">
             <FaStackExchange className={styles.icon} />
             <h2>Stake</h2>
           </a>
@@ -105,18 +110,18 @@ export default function Home() {
 
       <main>
         <section className={styles.topitem}>
-          <h1>Stake</h1>
+          <h1>Dashboard</h1>
           <div className={styles.buttons}>
             <button
               className={styles.buyButton}
-              // onClick={() =>
-              //   window.open(
-              //     "https://app.uniswap.org/swap/?outputCurrency=0xa41d2f8Ee4F47D3B860A149765A7dF8c3287b7F0",
-              //     "_blank"
-              //   )
-              // }
+              //   onClick={() =>
+              //     window.open(
+              //       "https://app.uniswap.org/swap/?outputCurrency=0xa41d2f8Ee4F47D3B860A149765A7dF8c3287b7F0",
+              //       "_blank"
+              //     )
+              //   }
             >
-              <MdToken className={styles.icon5} /> BUY $SYNCS
+              <MdToken className={styles.icon5} /> BUY $SYNC
             </button>
             <button
               className={styles.walletButton}
@@ -130,119 +135,104 @@ export default function Home() {
       </main>
       {/* -----------end of heading------------ */}
 
-      <section className={styles.bigSection}>
+      <section className={styles.bigSectiond}>
         {/* First Section */}
 
-        <div className={styles.section1}>
-          <div className={styles.stakingIcon}>
-            <SiHiveBlockchain className={styles.icon2} />
+        <div className={styles.sectiond}>
+          <div className={styles.sectiond1}>
+            <div className={styles.stakingIcon}>
+              <FaCircleDollarToSlot className={styles.icon2} />
+            </div>
+            <div className={styles.stakedAmount}>
+              <h6>SYNC Price</h6>
+              <div className={styles.amountBox}>
+                <span>$1000</span>
+              </div>
+            </div>
           </div>
-          <div className={styles.stakedAmount}>
-            <h6>Total Staked</h6>
-            <div className={styles.amountBox}>
-              <span>$1000</span>
+          <div className={styles.sectiond2}>
+            <div className={styles.stakingIcon}>
+              <SiMarketo className={styles.icon2} />
+            </div>
+            <div className={styles.stakedAmount}>
+              <h6>Market Cap</h6>
+              <div className={styles.amountBox}>
+                <span>$1000</span>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.sectiond3}>
+            <div className={styles.stakingIcon}>
+              <SiHiveBlockchain className={styles.icon2} />
+            </div>
+            <div className={styles.stakedAmount}>
+              <h6>Staked SYNC</h6>
+              <div className={styles.amountBox}>
+                <span>$1000</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className={styles.section22}>
-          {/* Second Section */}
-          <section className={styles.section2}>
-            <div className={styles.header}>
-              <div className={styles.stakingIcon}>
-                <SiHiveBlockchain className={styles.icon3} />
-              </div>
-              <div className={styles.stakedAmount2}>
-                <h4>$SYNCS</h4>
+        <div className={styles.sectiondb}>
+          <div className={styles.sectiond1}>
+            <div className={styles.stakingIcon}>
+              <FaCloudsmith className={styles.icon2} />
+            </div>
+            <div className={styles.stakedAmount}>
+              <h6>APY</h6>
+              <div className={styles.amountBox}>
+                <span>$1000</span>
               </div>
             </div>
-            <div className={styles.content2}>
-              {/* APY Rate and Current Index Rate */}
-              <div className={styles.amountBoxContainer}>
-                <div className={styles.amountBox1}>
-                  <p>APY</p>
-                  <span>100%</span>
-                </div>
-                <div className={styles.amountBox1}>
-                  <p>Current Index Rate</p>
-                  <span>1.4873</span>
-                </div>
+          </div>
+          <div className={styles.sectiond2}>
+            <div className={styles.stakingIcon}>
+              <FaPiggyBank className={styles.icon2} />
+            </div>
+            <div className={styles.stakedAmount}>
+              <h6>Treasury Balance</h6>
+              <div className={styles.amountBox}>
+                <span>$1000</span>
               </div>
+            </div>
+          </div>
 
-              {/* Stake and Unstake buttons */}
-              <div className={styles.buttonContainer}>
-                <button
-                  className={styles.stakeButton}
-                  onClick={handleStakeButtonClick}
-                >
-                  Stake
-                </button>
-                <button
-                  className={styles.unstakeButton}
-                  onClick={handleUnstakeButtonClick}
-                >
-                  Unstake
-                </button>
+          <div className={styles.sectiond3}>
+            <div className={styles.stakingIcon}>
+              <SiCrowdsource className={styles.icon2} />
+            </div>
+            <div className={styles.stakedAmount}>
+              <h6>Daily Revenue</h6>
+              <div className={styles.amountBox}>
+                <span>$1000</span>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <div className={styles.placeholderContainer}>
-                <input
-                  type="text"
-                  className={styles.placeholder}
-                  placeholder="Enter amount"
-                />
-                <button className={styles.maxButton}>Max</button>
+        <div className={styles.section22d}>
+          {/* Second Section */}
+          <section className={styles.section2d}>
+            <div className={styles.sectiondd3}>
+              <div className={styles.stakedAmountd}>
+                <h6>Revenue (7 days)</h6>
+                <div className={styles.amountBoxd}>
+                  <span></span>
+                </div>
               </div>
-              <button className={styles.stakeUnstakeButton}>
-                {previousAction === "stake" ? "Unstake" : "Stake SYNC"}
-              </button>
             </div>
           </section>
 
           {/* Third Section */}
-          <div className={styles.section3}>
-            {/* First Section */}
-            <div className={styles.balanceSection}>
-              <div className={styles.headerA}>
-                <h5>Balance</h5>
-              </div>
-              <div className={styles.contentA}>
-                <div className={styles.row}>
-                  <p>Your Balance:</p>
-                  {/* Display your balance */}
-                  <span>0.00</span>
+          <div className={styles.section3d}>
+            <div className={styles.sectiondd3}>
+              <div className={styles.stakedAmountd}>
+                <h6>Market Value of Treasury Assets</h6>
+                <div className={styles.amountBoxd}>
+                  <span></span>
                 </div>
-                <div className={styles.row}>
-                  <p>Your Staked Balance:</p>
-                  <span>0.00</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Second Section */}
-            <div className={styles.balanceSectionB}>
-              <div className={styles.headerA}>
-                <h5>Balance</h5>
-              </div>
-              <div className={styles.contentA}>
-                <div className={styles.row}>
-                  <p>Next Reward Amount:</p>
-                  <span>$200</span>
-                </div>
-                <div className={styles.row}>
-                  <p>Next Reward Yield:</p>
-                  <span>5%</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Third Section */}
-            <div className={styles.balanceSectionC}>
-              <div className={styles.headerA}>
-                <h6>ROI (7-Day Rate)</h6>
-              </div>
-              <div className={styles.row}>
-                <span>1.7534</span>
               </div>
             </div>
           </div>

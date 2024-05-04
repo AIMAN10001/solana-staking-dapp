@@ -8,6 +8,7 @@
 .top {
   background: transparent;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 1.2rem;
@@ -19,13 +20,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1.7rem;
-  /* margin-top: 0.3rem; */
-  gap: 0.2rem;
+  /* margin: 1.7rem; */
+  margin-top: 1rem;
+  margin-bottom: -1rem;
 }
 .logo img {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 6.5rem;
+  height: 6rem;
+}
+
+.logotext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -0.3rem;
+  margin-bottom: 0.3rem;
+}
+.logotext img {
+  width: 14rem;
+  height: 6.5rem;
 }
 
 .close {
@@ -37,7 +50,7 @@
   background: transparent;
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: 55vh;
   position: relative;
   top: 1.3rem;
 }
@@ -561,4 +574,691 @@
   display: flex;
   border-radius: 0.5rem;
   margin-left: 0.7rem;
+}
+
+/* ------------------Dashboard---------------- */
+/* ----------------Big Section----------- */
+
+.bigSectionc {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+/*------------------ section1----------- */
+
+.sectionc {
+  display: flex;
+  flex-direction: row;
+  margin-left: 51.5rem;
+  margin-top: -1.2rem;
+}
+
+.sectioncb {
+  display: flex;
+  flex-direction: row;
+  margin-top: -1.5rem;
+  margin-left: 52.5rem;
+}
+
+.sectionc2 {
+  background-color: rgba(255, 255, 255, 0.3);
+
+  margin-right: 1rem;
+  width: 21.8rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: left;
+  margin-top: 0.6rem;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.sectionc3 {
+  background-color: rgba(255, 255, 255, 0.3);
+
+  border-radius: 1rem;
+  width: 21.5rem;
+  display: flex;
+  justify-content: left;
+  margin-top: 0.6rem;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.stakingIcon {
+  margin-right: 1rem;
+  justify-content: center;
+  display: flex;
+  margin: 1rem;
+  padding: 0.8rem;
+  margin-top: 1.1rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.icon2 {
+  font-size: 1.5rem;
+}
+
+.icon3 {
+  font-size: 1.7rem;
+}
+
+.stakedAmount {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  color: #ffffff9e;
+  margin-top: 0.6rem;
+}
+
+.amountBox {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  /* margin-top: 0.5rem; */
+  height: 2.2rem;
+  margin-top: 0.4rem;
+}
+
+.amountBox span {
+  font-size: 1.2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.content {
+  margin-top: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.row p {
+  margin-right: 1rem;
+}
+
+/* ------------------section2---------- */
+
+.section22d {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-bottom: 1.5rem; */
+  gap: 1.5rem;
+}
+
+.section2d {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* padding: 0.3rem; */
+  margin-left: 23rem;
+  /* margin-right: 32rem; */
+  border-radius: 1rem;
+  height: 16rem;
+  width: 73.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+/* ----------------section3--------------- */
+
+.section3d {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* padding: 0.3rem; */
+  margin-left: 23rem;
+  margin-right: 4rem;
+  height: 14rem;
+  width: 73.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.sectiondd3 {
+}
+
+.stakedAmountd {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  color: #ffffff9e;
+  margin-top: 1.3rem;
+  margin-left: 1.3rem;
+}
+
+.amountBoxd {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  height: 1.7rem;
+  width: 6rem;
+  margin-top: 0.4rem;
+}
+
+/* -----------------Affiliate----------------- */
+
+/* ----------------Big Section----------- */
+
+.bigSectiond {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+/*------------------ section1----------- */
+
+.sectiond {
+  display: flex;
+  flex-direction: row;
+}
+
+.sectiondb {
+  display: flex;
+  flex-direction: row;
+  margin-top: -1.5rem;
+}
+
+.ctext {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ctext span {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.sectioncb3 {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  width: 44.3rem;
+  display: flex;
+  justify-content: left;
+  margin-top: 0.6rem;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.chead {
+  display: flex;
+  gap: 26.5rem;
+  margin-left: 52.6rem;
+  margin-top: 1rem;
+}
+
+.iconc {
+  font-size: 1rem;
+}
+
+.amountBoxc {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  height: 2.2rem;
+  margin-top: -0.2rem;
+  margin-left: -0.9rem;
+}
+
+.amountBoxc1 {
+  background-color: #fff;
+  color: rgb(36, 9, 9);
+  padding: 0.5rem 1rem;
+  border-radius: 1.1rem;
+  margin-top: 0.5rem;
+  height: 2.4rem;
+  margin-top: 1.5rem;
+  margin-left: 19rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amountBoxc1 span {
+  font-size: 1rem;
+}
+
+.amountBoxc span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stakedAmountc {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  color: #ffffff9e;
+  margin-top: 1.1rem;
+}
+
+.sectionc22 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-direction: column;
+}
+
+.sectioncc2 {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.3rem;
+  margin-left: 23rem;
+  margin-top: -17.5rem;
+  border-radius: 1rem;
+  height: 18rem;
+  width: 27.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.sectioncc3 {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.3rem;
+  margin-left: 23rem;
+  margin-right: 4rem;
+  margin-top: 1.3rem;
+  height: 25.5rem;
+  width: 27.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.headercc {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.404);
+
+  padding: 1rem;
+  margin-top: 0.3rem;
+}
+
+.placeholderContainerc {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.placeholderc {
+  flex: 1 1;
+  padding: 1rem;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 0.7rem;
+  margin-right: -3.2rem;
+  margin-top: 0.7rem;
+}
+
+.placeholderc::placeholder {
+  font-size: 1.1rem;
+}
+
+.placeholderc2 {
+  flex: 1 1;
+  padding: 1rem;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 0.7rem;
+  margin-right: -3.2rem;
+  margin-top: 0.7rem;
+}
+
+.placeholderc2::placeholder {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.sectioncc21 {
+  margin-left: -1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -0.3rem;
+  flex-direction: column;
+}
+
+.stakedAmountcc2 {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowcc {
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 24rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+
+.tiersButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #3b2b45dc;
+  font-size: 1.1rem;
+  width: 24.5rem;
+  margin-left: -0.7rem;
+  height: 2.5rem;
+  border-radius: 1.1rem;
+  margin-top: 1rem;
+}
+
+.rowcc2 {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 24rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+
+.contentccA {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.404);
+  margin-left: -0.5rem;
+  padding-bottom: 0.5rem;
+  width: 24rem;
+}
+
+.stakedAmountcc2 h6 {
+  font-size: 1.4rem;
+}
+
+.amountBoxcc2 {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  height: 2.2rem;
+  margin-top: 0.4rem;
+  color: #ffffff9e;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amountBoxcc2 span {
+  font-size: 1.1rem;
+}
+
+.balanceSectionBC {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-top: -1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowcc22 {
+  display: flex;
+  justify-content: center;
+  gap: 14rem;
+  align-items: center;
+  width: 24rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  margin-top: -2.5rem;
+  font-size: 1.1rem;
+  margin-left: -0.5rem;
+}
+
+.rowccc2 {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  align-items: center;
+  background-color: #4131716f;
+  width: 24rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  margin-left: -0.5rem;
+}
+
+.A {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  /* font-size: 1rem; */
+}
+
+.contentAC {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: -0.5rem;
+  padding-bottom: 0.5rem;
+  width: 24rem;
+}
+
+.Aicon {
+  font-size: 1.4rem;
+}
+
+.iconcc2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.contentcc2 {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.contentcc2 span {
+  font-size: 1.1rem;
+  color: #cec8da;
+}
+
+.iconc2 {
+  font-size: 1.5rem;
+  margin-right: 2.1rem;
+  margin-top: 0.5rem;
+}
+
+.headercc h5 {
+  margin-left: -1rem;
+}
+
+.balanceSectionBC2 {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-top: -1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectiond1 {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: 23rem;
+  border-radius: 1rem;
+  width: 24rem;
+  display: flex;
+  justify-content: left;
+  margin-top: 0.6rem;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.sectiond2 {
+  background-color: rgba(255, 255, 255, 0.3);
+
+  margin-right: 1rem;
+  width: 23.4rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: left;
+  margin-top: 0.6rem;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.sectiond3 {
+  background-color: rgba(255, 255, 255, 0.3);
+
+  border-radius: 1rem;
+  width: 24rem;
+  display: flex;
+  justify-content: left;
+  margin-top: 0.6rem;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.stakingIcon {
+  margin-right: 1rem;
+  justify-content: center;
+  display: flex;
+  margin: 1rem;
+  padding: 0.8rem;
+  margin-top: 1.1rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.icon2 {
+  font-size: 1.5rem;
+}
+
+.icon3 {
+  font-size: 1.7rem;
+}
+
+.stakedAmount {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  color: #ffffff9e;
+  margin-top: 0.6rem;
+}
+
+.amountBox {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  /* margin-top: 0.5rem; */
+  height: 2.2rem;
+  margin-top: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amountBox span {
+  font-size: 1.2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.content {
+  margin-top: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.row p {
+  margin-right: 1rem;
+}
+
+/* ------------------section2---------- */
+
+.section22d {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-bottom: 1.5rem; */
+  gap: 1.5rem;
+}
+
+.section2d {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* padding: 0.3rem; */
+  margin-left: 23rem;
+  /* margin-right: 32rem; */
+  border-radius: 1rem;
+  height: 16rem;
+  width: 73.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+/* ----------------section3--------------- */
+
+.section3d {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* padding: 0.3rem; */
+  margin-left: 23rem;
+  margin-right: 4rem;
+  height: 14rem;
+  width: 73.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: 1px solid rgba(245, 245, 245, 0.404);
+}
+
+.sectiondd3 {
+}
+
+.stakedAmountd {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  color: #ffffff9e;
+  margin-top: 1.3rem;
+  margin-left: 1.3rem;
+}
+
+.amountBoxd {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  height: 1.7rem;
+  width: 6rem;
+  margin-top: 0.4rem;
 }
